@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*
+    Для .header:
+    Встанови чорний фон (#000).
+    Додай білий (#fff) текст Header Content та відцентруй його.
+    Відцентруй текст всередині header
+    Висота header має бути 40px+
+*/
+
+.header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+
+/*
+    Для .footer:
+    Встанови темно-сірий фон (#444).
+    Додай білий (#fff) текст Footer Content та відцентруй його.
+    Висота footer має бути 60px
+*/
+
+.footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    margin-top: auto;
+}
+
+/*
+    Встанови внутрішні відступи по 20px
+    Друга та четверта секції повинні мати фон (використай класи section-2 та section-4 і 
+    будь-який колір крім білого).
+    Ширина тексту в секціях повинна бути >= 500px та <= 960px (Додай обгортку з класом container)
+    Фон повинен розтягуватись на всю ширину екрану
+    Блоки тексту мають бути відцентровані горизонтально
+    Зроби так, щоб під footer ніколи не з'явилося порожнє місце
+*/
+
+.section-2, .section-4 {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.container {
+    min-width: 500px;
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}

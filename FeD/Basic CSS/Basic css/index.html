@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!---
+    <style>
+        em {
+          font-style: normal;  
+        }
+    
+        strong {
+            font-weight: normal;
+        }
+    
+        a {
+            color: rgb(15, 14, 14);
+            text-decoration: none;
+            cursor: default;
+        }
+    </style>
+    -->
+</head>
+<body>
+    
+<!--==================================================================================================================
+
+    Думаю, ти вже здогадався, що стилізувати елементи можна багатьма способами.
+
+    Зміни <em>, <strong> та <a> на теги <span> із атрибутом style так, щоб текст виглядав як і раніше.
+    
+    Підказка: для заміни <em>, <strong> та <a> тобі знадобляться такі CSS-властивості:
+    
+    font-style:italic;
+    
+    font-weight:bold;
+    
+    cursor:pointer;
+    
+    color:blue;
+    
+    text-decoration:underline;
+==================================================================================================================-->
+
+<p>
+ <span style="font-style:italic; color:blue">em</span>
+ <br>
+ <span style="font-weight:bold; text-decoration:underline;"">strong</span>
+ <br>
+ <span style="cursor:pointer; font-weight:bold">a</span>
+</p>
+
+<br> <br>
+<br> <br>
+<!--==================================================================================================================
+
+Додай вбудовані стилі, щоб текст у тегах <em>, <strong> та <a> мав вигляд звичайного тексту.
+
+Вимоги до розмітки:
+
+розмісти всередині тегу <em> стиль font-style: normal.
+у тегу <strong> повинен бути стиль font-weight: normal.
+у тегу <a> повинні бути стилі color: black; text-decoration: none; cursor: default.
+==================================================================================================================-->
+
+<p>
+    This is a paragraph with <em style="font-style: normal">italic</em> <strong style="font-weight: normal">bold</strong>
+    and a <a href="https://www.link.com" style="color: rgb(15, 14, 14); text-decoration: none; cursor: default">link</a>
+</p>
+
+<br> <br>
+<br> <br>
+<!--==================================================================================================================
+
+Перенеси атрибути стилів до тегу <style> у контейнер <head>. Використовуй імена тегів як селектори.
+==================================================================================================================-->
+This is a paragraph with <em>italic</em> <strong>bold</strong>
+and a <a href="https://www.link.com">link</a>
+
+<br> <br>
+<br> <br>
+<!--==================================================================================================================
+Писати стилі прямо в тегах - це круто, але якщо стилів буде багато, то розібратися в такому коді стане дуже складно. Тому давай не будемо чекати на появу проблем, а одразу перенесемо усі стилі в окремий файл style.css.
+
+Вимоги до завдання:
+
+всі стилі мають бути перенесені у файл style.css
+колір і розмір шрифту повинні бути задані для всього блоку description, а не для кожного окремого абзацу
+==================================================================================================================-->
+<h1>Heading text</h1>
+    <h2>First paragraph</h2>
+
+    <div class="description">
+      <p>From this paragraph you will learn about a lot of interesting.</p>
+      <p>Read it and do not forget to take a towel in space.</p>
+    </div>
+
+    <p>Some text of paragraph with <span>very</span> important and interesting information.</p>
+
+<br> <br>
+<br> <br>
+<!--==================================================================================================================
+Додай атрибут id до кожного <span> тегу, перенеси усі стилі до файлу style.css та видали атрибути style
+
+Вимоги до розмітки:
+
+Кожен тег <span> повинен містити атрибут id. Використовуй ті самі ідентифікатори та стилі, що і в прикладі.
+Не використовуй інлайнові стилі.
+==================================================================================================================-->
+<span id="biggest">first span</span>
+<span id="normal">second span</span>
+<span id="smallest">third span</span>
+
+<br> <br>
+<br> <br>
+<!--==================================================================================================================
+Позбудься id у розмітці HTML. Заміни усі атрибути id на унікальні класи. Використовуй ті ж назви.
+
+Вимоги до завдання:
+
+У тегів немає атрибута id
+Усі id замінено на відповідні класи
+Селектори по id в style.css замінено на селектори по класах
+==================================================================================================================-->
+<h1 class="title">
+    <span class="bold-text">Othello, Act I, Scene I</span>
+    [O, sir, content you]
+  </h1>
+  <p>
+    <a href="https://poets.org/poet/william-shakespeare" class="link">
+      William Shakespeare
+    </a>
+    - 1564-1616
+  </p>
+
+  <h2 class="subtitle">Iago speaks to Roderigo</h2>
+
+  <p class="poem">
+    O, sir, content you;
+    I follow him to serve my turn upon him:
+    We cannot all be masters, nor all masters
+    Cannot be truly follow'd. You shall mark
+    Many a duteous and knee-crooking knave,
+    That, doting on his own obsequious bondage,
+    Wears out his time, much like his master's ass,
+    For nought but provender, and when he's old, cashier'd:
+    Whip me such honest knaves. Others there are
+    Who, trimm'd in forms and visages of duty,
+    Keep yet their hearts attending on themselves,
+    And, throwing but shows of service on their lords,
+    Do well thrive by them and when they have lined their coats
+    Do themselves homage: these fellows have some soul;
+    And such a one do I profess myself. For, sir,
+    It is as sure as you are Roderigo,
+    Were I the Moor, I would not be Iago:
+    In following him, I follow but myself;
+    Heaven is my judge, not I for love and duty,
+    But seeming so, for my peculiar end:
+    For when my outward action doth demonstrate
+    The native act and figure of my heart
+    In compliment extern, 'tis not long after
+    But I will wear my heart upon my sleeve
+    For daws to peck at: I am not what I am.
+  </p>
+
+<br> <br>
+<br> <br>
+<!--==================================================================================================================
+Створи клас highlighted у файлі style.css та додай до нього background-color. 
+Колір можеш обрати на власний розсуд або використати значення із прикладу нижче.
+
+Додай клас highlighted до усіх тегів <span> в index.html. Старі класи в <span> залиш незміненими.
+==================================================================================================================-->
+<h1>
+    Franz Kafka
+  </h1>
+
+  <p>
+    One morning, <span class="description highlighted">when Gregor 
+    Samsa woke from troubled dreams</span>, 
+    he found himself transformed in his bed into a 
+    <span class="description highlighted">horrible vermin</span>.
+  </p>
+
+  <p>
+    He lay on his armour-like back, and if he lifted his head 
+    a little he could see his <span class="important highlighted">brown belly, slightly domed and 
+    divided by arches into stiff sections</span>. The bedding was hardly 
+    able to cover it and seemed ready to slide off any moment.
+  </p>
+
+  <p>
+    His many legs, pitifully thin compared with the size of the 
+    rest of him, waved about helplessly as he looked. <span class="question highlighted">"What's 
+    happened to me?"</span> he thought. It wasn't a dream. His room, a 
+    proper human room although a little too small, lay peacefully 
+    between its four familiar walls.
+  </p>
+
+  <p>
+    A collection of textile samples lay spread out on the 
+    table - <span class="description highlighted">Samsa was a travelling salesman</span> 
+    - and above it there hung a picture that he had recently cut out of an illustrated 
+    magazine and housed in a nice, gilded frame. It showed a lady fitted 
+    out with a fur hat and fur boa who sat upright, <span class="description highlighted">raising a heavy fur muff 
+    that covered the whole of her lower arm towards the viewer</span>. Gregor then 
+    turned to look out the window at the dull weather.
+  </p>
+ 
+
+  <br> <br>
+  <br> <br>
+  <!--==================================================================================================================
+Розділи текст на 2 параграфи, використовуючи теги <p>.
+
+Щоб побачити як елементи в другому параграфі успадковують розмір шрифту, додай для другого параграфу клас second та встанови розмір шрифту у ньому 20px.
+
+Вимоги:
+
+інлайнові стилі не використовуються;
+текст розділено на 2 параграфи;
+другий параграф містить клас second.
+  ==================================================================================================================-->
+  <h1>
+    Li Europan lingues
+  </h1>
+  <p class="first">
+    The European languages are members of the same family.
+    Their separate existence is a myth.<strong> For science, music, 
+    sport, etc, Europe uses the same vocabulary.</strong> The languages 
+    only differ in their grammar, their pronunciation and their 
+    most common words. <span>Everyone realizes why a new common 
+    language would be desirable: one could refuse to pay 
+    expensive translators.</span> To achieve this, it would be 
+    necessary to have uniform grammar, pronunciation and 
+    more common words.
+  </p>
+     <p class="second">
+    If several languages coalesce, the grammar of the resulting 
+    language is more simple and regular than that of the individual 
+    languages. <strong>The new common language will be more simple and regular 
+    than the existing European languages.</strong> It will be as simple as 
+    Occidental; <span>in fact, it will be Occidental.</span> To an English person, 
+    it will seem like simplified English, as a skeptical Cambridge 
+    friend of mine told me what Occidental is. The European languages 
+    are members of the same family. <strong>Their separate existence is a myth.</strong> 
+    For science, music, sport, etc, Europe uses the same vocabulary. 
+    <em>The languages only differ in their grammar</em>, their pronunciation and 
+    their most common words. Everyone realizes why a new common language 
+    would be desirable: <span>one could refuse to pay expensive translators.</span>
+  </p>
+
+  <br> <br>
+  <br> <br>
+  <!--==================================================================================================================
+Щоб побачити наслідування стилів у дії, додай клас aggregated для третього абзацу <p> із вкладеними тегами <em> та <strong> та зроби всі літери в ньому великими.
+
+Вимоги:
+
+інлайнові стилі не використано;
+тег <style> не використано;
+абзац зі вкладеними тегами <em> та <strong> містить клас aggregated;
+усі літери в цьому абзаці – великі.
+  ==================================================================================================================-->
+  <h1>
+    Stocks Collapse in 16,410,030-Share Day,
+    but Rally at Close Cheers Brokers;
+    Bankers Optimistic, to Continue Aid
+  </h1>
+  <h2>
+    By THE NEW YORK TIMES
+  </h2>
+
+  <p class="top_text">
+    Stock prices virtually collapsed yesterday, swept downward with gigantic
+    losses in the most disastrous trading day in the stock market's history.
+    Billions of dollars in open market values were wiped out as prices crumbled
+    under the pressure of liquidation of securities which had to be sold at any
+    price.
+  </p>
+
+  <p>
+    There was an impressive rally just at the close, which brought many leading
+    stocks back from 4 to 14 points from their lowest points of the day.
+  </p>
+
+  <p class="aggregated" >
+    Trading on the New York Stock Exchange <strong>aggregated 16,410,030 shares</strong>;
+    on the Curb, <strong>7,096,300 shares were dealt in</strong>. <em>Both totals far exceeded any
+      previous day's dealings.</em>
+  </p>
+
+  <p>
+    From every point of view, in the extent of losses sustained, in total
+    turnover, in the number of speculators wiped out, the day was the most
+    disastrous in Wall Street's history. Hysteria swept the country and
+    stocks went overboard for just what they would bring at forced sale.
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

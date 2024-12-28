@@ -1,0 +1,33 @@
+.footer {
+    background-color: rgb(64, 64, 64)
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    /*В самом конце задач */
+    font-size: 18px;
+}
+
+* {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0; 
+    margin-top: 0.75em; 
+    margin-bottom: 0.75em; 
+}
+
+.text {
+    font-size: 1.2em;
+    margin: 0.5em 1.5em 0.5em 1.5em;
+}
+
+.container {
+    margin: 1.75rem, auto;
+}

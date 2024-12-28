@@ -1,0 +1,58 @@
+/* Встанови box-sizing: border-box для всіх елементів на сторінці */
+
+* {
+    box-sizing: border-box;
+}
+
+/*Скинь для заголовка <h1> і абзаців стилі, додані браузером (margin, font-weight та font-size: medium)
+*/
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: medium;
+}
+
+p {
+    margin: 0;
+}
+
+/* Скинь відступи для абзаців */
+h1, h2 {
+    margin: 0;
+}
+
+/* Усім елементам із атрибутом title додай cursor: pointer */
+[title] {
+    cursor: pointer;
+}
+
+/* Усім посиланням, адреса яких починається з https:, встанови колір darkmagenta */
+a[href^="https:"] {
+    color: darkmagenta;
+}
+
+/* Усім посиланням, адреса яких закінчується на .html, задай суцільну червону (red) рамку в 1px */
+a[href$=".html"] {
+    border: 1px solid red;
+}
+
+/* Додай підкреслення до всіх посилань усередині блоку .nav (не важливо, на якому рівні вкладеності вони знаходяться і навіть якщо в них немає жодних класів) */
+.nav a {
+    text-decoration: underline;
+}
+
+/* Задай жирність 700 текстові в абзацах, які є прямими нащадками блоку main */
+main > p {
+    font-weight: 700;
+}
+
+/* Задай посиланням, у яких є клас .active, жовтий колір (yellow) */
+.active {
+    color: yellow;
+}
+
+/* Елементові, який стоїть відразу після заголовка <h1>, додай чорну (black) суцільну рамку 5px     */
+h1 + * {
+    border: 5px solid black;
+}

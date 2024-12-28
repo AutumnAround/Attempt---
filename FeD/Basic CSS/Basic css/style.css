@@ -1,0 +1,81 @@
+/* У меня привычка 0 выставлять автоматом, сори */
+* {
+  margin: 0.5;
+}
+
+/*===================================================*/
+em {
+    font-style: normal;  
+  }
+
+strong {
+      font-weight: normal;
+  }
+
+a {
+      color: rgb(15, 14, 14);
+      text-decoration: none;
+      cursor: default;
+  }
+/*===================================================*/
+.description {
+    color: rgb(160, 29, 132);
+    font-weight: 400;
+  }
+/*===================================================*/
+#biggest {
+  color: red; font-size: 24px;
+}
+
+#normal {
+  color: peru; font-size: 20px;
+}
+
+#smallest {
+  color: green; font-size: 16px;
+}
+/*===================================================*/
+.title {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.link {
+  color: #007ab3;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.poem {
+  white-space: pre-line;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/*===================================================*/
+.highlighted {
+  background-color: blueviolet;
+}
+/*===================================================*/
+.top_text {
+  text-transform: uppercase;
+}
+
+.aggregated {
+  text-transform: uppercase;
+}
+/*===================================================*/
