@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    дані форми повинні надсилатись за допомогою методу POST на https://mate-academy-form-lesson.herokuapp.com/create-application;
+    -->
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"></form>
+    <!--
+    повинно бути 4 набори полів з правильними заголовками та класами fieldset;
+    кнопка Submit повинна мати правильний тип;
+    всі поля повинні мати name та label;
+    використай клас row, щоб додати відстань між полями;
+    Блок Personal information має містити:
+    текстові поля surname та name;
+    числове поле age від 1 до 100 (за замовчуванням 18);
+    дату birthday;
+    обов'язковий прапорець accepted зі значенням yes;
+    -->
+    <fieldset>
+        <legend>Personal information</legend>
+        <label>Name:</label><input type="text" name="surname">
+        <br><br>
+        <label> Surname:</label><input type="text" name="name">
+        <br><br>
+        <label>How old are You?</label><input type="number" name="age" min="1" max="100" value="18" required>
+        <br><br>
+        <label>Full date of birth:</label><input type="date" name="dateofbirth" placeholder="dd.mm.year">
+        <br><br>
+        <label><input type="checkbox" name="agree" required> I accept the terms of the agreement</label>     
+    </fieldset>
+
+
+    <!--
+    Блок Registration має містити:
+    обов'язкове поле email з placeholder;
+    обов'язкове поле password з довжиною від 6 до 30 символів;
+    -->
+    <fieldset>
+        <legend>Registration</legend>
+        <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"></form>
+        <label>Email:</label><input type="email" name="email" placeholder="email@email.com">
+        <br><br>
+        <label>Password:</label><input type="password" name="password" minlength="6" maxlength="30" required>
+    </fieldset>
+
+    <!--
+    Блок An interesting fact about you! має містити:
+    радіокнопки cats зі значеннями yes та no;
+    поля color та time;
+    мультиселект cars з опціями bmw, audi та skoda;
+    діапазон rate від 0 до 5 з кроком 1 та значенням 0;
+    -->
+
+    <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"></form>
+        <label>Do you love cats?</label>
+        <label><input type="radio" name="love-cats" value="yes"> Yes</label>
+        <label><input type="radio" name="love-cats" value="no"> No</label>        
+        <br><br>
+        <label>What is your favorite color?</label>
+        <input type="color">
+        <br><br>
+        <label>What time do you go to bed?</label>
+        <input type="time">
+        <br><br>
+        <label>What are your favorite brand of cars?</label>
+        <select>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Skoda</option>
+        </select>
+        <br><br>
+        <label>How do you rate our work?</label>
+        <input type="range" name="rate" min="0" max="5" step="1" value="0">
+    </fieldset>
+
+    <!--
+    Блок Additional info: має містити:
+
+    comments - це textarea без вмісту;
+    список recommend зі значеннями yes та no.-->
+    <fieldset>
+        <legend>Additional info:</legend>
+        <label>Comments:</label><textarea name="comments"></textarea>
+        <br><br>
+        <label>Would you recommend us?</label>
+        <select>
+            <option>yes</option>
+            <option>no</option>
+        </select>
+    </fieldset>
+    
+    <button type="submit">Submit</button>
+
+
+</body>
+</html>
