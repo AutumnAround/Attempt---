@@ -1,7 +1,7 @@
 # Frontend-Fundamentals
 
 # 🎓 Frontend Basics  
-This repository contains my learning progress in **HTML, CSS, and JavaScript**.  
+This repository contains my learning progress in **HTML, CSS, and Basic JavaScript**.  
 
 ## 📌 Topics covered  
 ### 🖥️ HTML & CSS  
